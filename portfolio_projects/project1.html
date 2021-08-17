@@ -80,13 +80,15 @@
                             </p>
 
                             <div class="container">
-                                <!-- <h3 class="mt-3 mb-3">Accordion</h3> -->
-                                <div class="accordion" id="accordionSection">
-                                    <div class="accordion-item mb-3">
-                                        <h2 class="accordion-header">
-                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Scripts</button></h2>
-                                        <div class="accordion-collapse collapse" id="collapseOne" data-bs-parent="#accordionSection">
-                                            <div class="accordion-body">
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Scripts</button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                            <div class="card-body">
                                                 <ol>
                                                     <li><b>Get data:</b> <a href="assets/get_songs.pdf">get_songs.pdf</a></li>
                                                     <li><b>Create word clouds:</b> <a href="assets/make_wordclouds.pdf">make_wordclouds.pdf</a></li>
@@ -94,13 +96,15 @@
                                                 </ol>
                                             </div>
                                         </div>
-                                        
                                     </div>
-                                    <div class="accordion-item mb-3">
-                                        <h2 class="accordion-header">
-                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Word Cloud Visualizations</button></h2>
-                                        <div class="accordion-collapse collapse" id="collapseTwo" data-bs-parent="#accordionSection">
-                                            <div class="accordion-body text-center">
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Word Cloud Visualizations</button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                                            <div class="card-body text-center">
                                                 <figure>
                                                     <img src="assets/wordclouds/taylor swift_wordcloud_1.png" class="img-fluid img-thumbnail rounded" alt="Wordcloud for Album: Taylor Swift" style="height:600px;">
                                                     <figcaption>Album: Taylor Swift</figcaption>
@@ -139,291 +143,318 @@
                                                 </figure>
                                             </div>
                                         </div>
-                                        
                                     </div>
-                                    <div class="accordion-item mb-3">
-                                        <h2 class="accordion-header">
-                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">Lyrical and Thematic Analysis</button></h2>
-                                        <div class="accordion-collapse collapse" id="collapseThree" data-bs-parent="#accordionSection">
-                                            <div class="accordion-body">
-                                                <h4 class="fw-bolder mb-4 mt-5">Look Up Word Frequency</h4>
-                                                <iframe width="200" height="110" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=4ABE5A402EE16F99%21131&authkey=%21AMUhL25vKNPRvgI&em=2&wdAllowInteractivity=False&AllowTyping=True&ActiveCell='new_words_albums'!O2&Item='new_words_albums'!N2%3AO3&wdHideGridlines=True&wdInConfigurator=True"></iframe>
-                                                <iframe width="262" height="130" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=4ABE5A402EE16F99%21131&authkey=%21AMUhL25vKNPRvgI&em=2&AllowTyping=True&ActiveCell='new_words_albums'!R2&Item='new_words_albums'!Q2%3AR4&wdHideGridlines=True&wdInConfigurator=True"></iframe>
-                                                <h4 class="fw-bolder mb-4 mt-5">Unique Lyrics</h4>
-                                                <ul>
-                                                    <li>Taylor Swift</li>
-                                                        <d1>
-                                                            <dt>'amen', 'good heart'</dt>
-                                                            <dd>Innocence, belief in God</dd>
-                                                            <dt>'anyone', 'forgiveness'</dt>
-                                                            <dd>Desperation for others</dd>
-                                                            <dt>'can't', 'weakness'</dt>
-                                                            <dd>Lack of ability</dd>
-                                                            <dt>'tear apart', 'undone'</dt>
-                                                            <dd>Ruined and broken</dd>
-                                                            <dt>'black dress', 'chest', 'date', 'Drew', 'slow'</dt>
-                                                            <dd>Blooming romance</dd>
-                                                            <dt>'lake', 'moon', 'outside', 'sky'</dt>
-                                                            <dd>Nature</dd>
-                                                            <dt>'Georgia', 'old faded blue jeans', 'porch', 'shotgun', 'slamming screen door'</dt>
-                                                            <dd>Small town Americana</dd>
-                                                            <dt>'guitar', 'radio', 'tapping', 'Tim McGraw'</dt>
-                                                            <dd>Music, specifically country music</dd>
-                                                        </d1>
-                                                    <li>Fearless</li>
-                                                        <d1>
-                                                            <dt>'about', 'fairytale', 'princess'/'prince', 'Romeo'/'Juliet', 'story', 'white horse'</dt>
-                                                            <dd>Romantic fantasy and fiction</dd>
-                                                            <dt>'deep breath', 'fearless', 'head first'</dt>
-                                                            <dd>Inner strength and bravery</dd>
-                                                            <dt>'help', 'scared'</dt>
-                                                            <dd>Struggle and fear</dd>
-                                                            <dt>'storm', 'temper'</dt>
-                                                            <dd>Chaos and volatility</dd>
-                                                            <dt>'angel', 'hallelujah'</dt>
-                                                            <dd>Heavenly God</dd>
-                                                            <dt>'along', 'clean break', 'drag', 'tired'</dt>
-                                                            <dd>Burn out, unwillingness to continue</dd>
-                                                        </d1>
-                                                    <li>Speak Now</li>
-                                                        <d1>
-                                                            <dt>'church', 'crowd', 'marrying', 'vow', 'white veil occasion'</dt>
-                                                            <dd>Wedding</dd>
-                                                            <dt>'enchanted'/'enchanting', 'fate'</dt>
-                                                            <dd>Mystical and spiritual</dd>
-                                                            <dt>'careless'/'careful', 'innocent', 'messed', 'rudely barge in', 'wild'</dt>
-                                                            <dd>Trouble maker versus rule follower</dd>
-                                                            <dt>'figured', 'imagined', 'someday', 'whenever'</dt>
-                                                            <dd>Expectations, the hypothetical future</dd>
-                                                            <dt>'daughter', 'family'</dt>
-                                                            <dd>Familial significance</dd>
-                                                        </d1>
-                                                    <li>Red</li>
-                                                        <d1>
-                                                            <dt>'dressed to the nines', 'marvelous tune'</dt>
-                                                            <dd>Old timey, vintage, bygone</dd>
-                                                            <dt>'confused', 'realizing'</dt>
-                                                            <dd>Learning hard truths</dd>
-                                                            <dt>'impossible', 'slope', 'treacherous', 'trouble'</dt>
-                                                            <dd>Insurmountable challenges, instability</dd>
-                                                            <dt>'Wednesday', 'yesterday'</dt>
-                                                            <dd>Recalling and reminiscing</dd>
-                                                            <dt>'new Maserati', 'top'</dt>
-                                                            <dd>Wealth and status</dd>
-                                                        </d1>
-                                                    <li>1989</li>
-                                                        <d1>
-                                                            <dt>'clean', 'clear', 'done', 'solve'</dt>
-                                                            <dd>Overcoming or being free of something</dd>
-                                                            <dt>'bad blood', 'flames', 'torture', 'warn'</dt>
-                                                            <dd>Malice and toxicity</dd>
-                                                            <dt>'insane', 'reckless'</dt>
-                                                            <dd>Craziness</dd>
-                                                            <dt>'blank space', 'ex-lovers', 'filled'</dt>
-                                                            <dd>A romantic void</dd>
-                                                            <dt>'hide', 'lock', 'trace'</dt>
-                                                            <dd>Evading detection, staying out of sight while being pursued</dd>
-                                                            <dt>'New York', 'nice dress', 'style'</dt>
-                                                            <dd>Fashion, aesthetic quality</dd>
-                                                            <dt>'grab', 'palm'</dt>
-                                                            <dd>Holding hands, exploration</dd>
-                                                            <dt>'heaven', 'incredible', 'wildest dreams'</dt>
-                                                            <dd>Untouchable fantasies</dd>
-                                                        </d1>
-                                                    <li>reputation</li>
-                                                        <d1>
-                                                            <dt>'bad feeling', 'blame', 'mistakes'</dt>
-                                                            <dd>Ominous anticipation, negative consequences</dd>
-                                                            <dt>'actress starring', 'drama', 'reputation'</dt>
-                                                            <dd>The dark façade of fame</dd>
-                                                            <dt>'bar', 'drinking', 'drug'</dt>
-                                                            <dd>Letting go of inhibitions</dd>
-                                                            <dt>'bought', 'gorgeous', 'nice things'</dt>
-                                                            <dd>Money and superficial materialism</dd>
-                                                            <dt>'chill', 'patience', 'silence'</dt>
-                                                            <dd>Calm and quiet</dd>
-                                                            <dt>'end game', 'precede': </dt>
-                                                            <dd>Beginning/end, before/after</dd>
-                                                            <dt>'everyone', 'them'</dt>
-                                                            <dd>Other people, herd mentality</dd>
-                                                            <dt>'death trap', 'getaway car', 'tied'</dt>
-                                                            <dd>Escaping from captivity</dd>
-                                                            <dt>'check', 'trust/truth'</dt>
-                                                            <dd>Trust and mistrust</dd>
-                                                            <dt>'king/kingdom', 'Lord'</dt>
-                                                            <dd>A higher ruling power</dd>
-                                                        </d1>
-                                                    <li>Lover</li>
-                                                        <d1>
-                                                            <dt>'bless', 'blind faith', 'false God', 'worship'</dt>
-                                                            <dd>Surrendering to belief in something greater</dd>
-                                                            <dt>'combat', 'loud'</dt>
-                                                            <dd>Noisy conflict</dd>
-                                                            <dt>'calm', 'daylight', 'skipping down'</dt>
-                                                            <dd>Feeling content, positive and giddy</dd>
-                                                            <dt>'16th Avenue', 'Cornelia Street', 'London'</dt>
-                                                            <dd>The impact of places on experiences</dd>
-                                                        </d1>
-                                                    <li>folklore</li>
-                                                        <d1>
-                                                            <dt>'angry', 'cursing', 'fuck'</dt>
-                                                            <dd>Expressing aggravation</dd>
-                                                            <dt>'broken', 'canceled', 'exile', 'none', 'ruining everything', 'slipped away'</dt>
-                                                            <dd>Losing it all, self-sabotage</dd>
-                                                            <dt>'highest heels', 'old cardigan'</dt>
-                                                            <dd>The imagery of clothing</dd>
-                                                            <dt>'marvelous time', 'mirrorball', 'party', 'spinning'</dt>
-                                                            <dd>Dancing at a soiree</dd>
-                                                            <dt>'assume', 'seem'</dt>
-                                                            <dd>Unfounded judgments</dd>
-                                                            <dt>'August', 'garden', 'pool'</dt>
-                                                            <dd>Backyard in late summertime</dd>
-                                                        </d1>
-                                                    <li>evermore</li>
-                                                        <d1>
-                                                            <dt>'celebrated', 'champagne', 'glass'</dt>
-                                                            <dd>Drinking to commemorate</dd>
-                                                            <dt>'alive', 'bent', 'bone', 'ivy', 'roots', 'tree', 'wherever', 'willow'</dt>
-                                                            <dd>Organically growing and entwining</dd>
-                                                            <dt>'ship', 'tires', 'train'</dt>
-                                                            <dd>Transportation</dd>
-                                                            <dt>'cost', 'pay'</dt>
-                                                            <dd>Compensation</dd>
-                                                            <dt>'flush', 'water'</dt>
-                                                            <dd>Rinsing and cleansing</dd>
-                                                            <dt>'hollow', 'less', 'stray', 'wreck'</dt>
-                                                            <dd>Being left with nothing</dd>
-                                                            <dt>'across', 'leads', 'open'</dt>
-                                                            <dd>Access to new opportunities</dd>
-                                                            <dt>'motion', 'pause'</dt>
-                                                            <dd>Stop and go</dd>
-                                                            <dt>'prove', 'sure'</dt>
-                                                            <dd>Establishing certainty</dd>
-                                                            <dt>'gold rush', 'stone'</dt>
-                                                            <dd>Earth’s treasures</dd>
-                                                            <dt>'somehow', 'tolerate'</dt>
-                                                            <dd>Reluctant endurance</dd>
-                                                        </d1>
-                                                </ul>
-                                                <h4 class="fw-bolder mb-4 mt-5">Common Lyrics</h4>
-                                                <ul>
-                                                    <li>'around'</li>
-                                                    <li>'baby'</li>
-                                                    <li>'back'</li>
-                                                    <li>'cause'</li>
-                                                    <li>'come'</li>
-                                                    <li>'didn't'/'don't'</li>
-                                                    <li>'go'/'gonna'</li>
-                                                    <li>'good'</li>
-                                                    <li>'got'</li>
-                                                    <li>'know'</li>
-                                                    <li>'look'</li>
-                                                    <li>'love'</li>
-                                                    <li>'made'/'make'</li>
-                                                    <li>'never'</li>
-                                                    <li>'night'</li>
-                                                    <li>'now'</li>
-                                                    <li>'one'</li>
-                                                    <li>'said'/'say'</li>
-                                                    <li>'see'/'seen'</li>
-                                                    <li>'still'</li>
-                                                    <li>'take'</li>
-                                                    <li>'thing'</li>
-                                                    <li>'think'</li>
-                                                    <li>'time'</li>
-                                                    <li>'wanna'/'want'</li>
-                                                </ul>
-                                                <h4 class="fw-bolder mb-4 mt-5">Thematic Analysis</h4>
-                                                <ul>
-                                                    <li>Reoccuring Themes</li>
-                                                        <d1>
-                                                            <dt>Brokenness</dt>
-                                                            <dt>Chaos and instability</dt>
-                                                            <dt>God</dt>
-                                                            <dt>Music and dancing</dt>
-                                                            <dt>Nature</dt>
-                                                            <dt>Romance</dt>
-                                                            <dt>Struggle and overcoming</dt>
-                                                        </d1>
-                                                    <li>Recent Themes</li>
-                                                        <d1>
-                                                            <dt>21+</dt>
-                                                            <dt>Fame</dt>
-                                                            <dt>Fashion</dt>
-                                                            <dt>Memories</dt>
-                                                            <dt>Money</dt>
-                                                            <dt>Trust</dt>
-                                                        </d1>
-                                                </ul>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 d-inline">
+                                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Lyrical and Thematic Analysis</button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                                            <div class="card-body" id="child1">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseThreeA">Look Up Word Frequency</a>
+                                                    </div>
+                                                    <div class="card-body accordion-collapse collapse" data-bs-parent="#child1" id="collapseThreeA">
+                                                        <iframe width="200" height="110" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=4ABE5A402EE16F99%21131&authkey=%21AMUhL25vKNPRvgI&em=2&wdAllowInteractivity=False&AllowTyping=True&ActiveCell='new_words_albums'!O2&Item='new_words_albums'!N2%3AO3&wdHideGridlines=True&wdInConfigurator=True"></iframe>
+                                                        <iframe width="262" height="130" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=4ABE5A402EE16F99%21131&authkey=%21AMUhL25vKNPRvgI&em=2&AllowTyping=True&ActiveCell='new_words_albums'!R2&Item='new_words_albums'!Q2%3AR4&wdHideGridlines=True&wdInConfigurator=True"></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseThreeB">Unique Lyrics</a>
+                                                    </div>
+                                                    <div class="card-body accordion-collapse collapse" data-bs-parent="#child1" id="collapseThreeB">
+                                                        <ul>
+                                                            <li>Taylor Swift</li>
+                                                                <d1>
+                                                                    <dt>'amen', 'good heart'</dt>
+                                                                    <dd>Innocence, belief in God</dd>
+                                                                    <dt>'anyone', 'forgiveness'</dt>
+                                                                    <dd>Desperation for others</dd>
+                                                                    <dt>'can't', 'weakness'</dt>
+                                                                    <dd>Lack of ability</dd>
+                                                                    <dt>'tear apart', 'undone'</dt>
+                                                                    <dd>Ruined and broken</dd>
+                                                                    <dt>'black dress', 'chest', 'date', 'Drew', 'slow'</dt>
+                                                                    <dd>Blooming romance</dd>
+                                                                    <dt>'lake', 'moon', 'outside', 'sky'</dt>
+                                                                    <dd>Nature</dd>
+                                                                    <dt>'Georgia', 'old faded blue jeans', 'porch', 'shotgun', 'slamming screen door'</dt>
+                                                                    <dd>Small town Americana</dd>
+                                                                    <dt>'guitar', 'radio', 'tapping', 'Tim McGraw'</dt>
+                                                                    <dd>Music, specifically country music</dd>
+                                                                </d1>
+                                                            <li>Fearless</li>
+                                                                <d1>
+                                                                    <dt>'about', 'fairytale', 'princess'/'prince', 'Romeo'/'Juliet', 'story', 'white horse'</dt>
+                                                                    <dd>Romantic fantasy and fiction</dd>
+                                                                    <dt>'deep breath', 'fearless', 'head first'</dt>
+                                                                    <dd>Inner strength and bravery</dd>
+                                                                    <dt>'help', 'scared'</dt>
+                                                                    <dd>Struggle and fear</dd>
+                                                                    <dt>'storm', 'temper'</dt>
+                                                                    <dd>Chaos and volatility</dd>
+                                                                    <dt>'angel', 'hallelujah'</dt>
+                                                                    <dd>Heavenly God</dd>
+                                                                    <dt>'along', 'clean break', 'drag', 'tired'</dt>
+                                                                    <dd>Burn out, unwillingness to continue</dd>
+                                                                </d1>
+                                                            <li>Speak Now</li>
+                                                                <d1>
+                                                                    <dt>'church', 'crowd', 'marrying', 'vow', 'white veil occasion'</dt>
+                                                                    <dd>Wedding</dd>
+                                                                    <dt>'enchanted'/'enchanting', 'fate'</dt>
+                                                                    <dd>Mystical and spiritual</dd>
+                                                                    <dt>'careless'/'careful', 'innocent', 'messed', 'rudely barge in', 'wild'</dt>
+                                                                    <dd>Trouble maker versus rule follower</dd>
+                                                                    <dt>'figured', 'imagined', 'someday', 'whenever'</dt>
+                                                                    <dd>Expectations, the hypothetical future</dd>
+                                                                    <dt>'daughter', 'family'</dt>
+                                                                    <dd>Familial significance</dd>
+                                                                </d1>
+                                                            <li>Red</li>
+                                                                <d1>
+                                                                    <dt>'dressed to the nines', 'marvelous tune'</dt>
+                                                                    <dd>Old timey, vintage, bygone</dd>
+                                                                    <dt>'confused', 'realizing'</dt>
+                                                                    <dd>Learning hard truths</dd>
+                                                                    <dt>'impossible', 'slope', 'treacherous', 'trouble'</dt>
+                                                                    <dd>Insurmountable challenges, instability</dd>
+                                                                    <dt>'Wednesday', 'yesterday'</dt>
+                                                                    <dd>Recalling and reminiscing</dd>
+                                                                    <dt>'new Maserati', 'top'</dt>
+                                                                    <dd>Wealth and status</dd>
+                                                                </d1>
+                                                            <li>1989</li>
+                                                                <d1>
+                                                                    <dt>'clean', 'clear', 'done', 'solve'</dt>
+                                                                    <dd>Overcoming or being free of something</dd>
+                                                                    <dt>'bad blood', 'flames', 'torture', 'warn'</dt>
+                                                                    <dd>Malice and toxicity</dd>
+                                                                    <dt>'insane', 'reckless'</dt>
+                                                                    <dd>Craziness</dd>
+                                                                    <dt>'blank space', 'ex-lovers', 'filled'</dt>
+                                                                    <dd>A romantic void</dd>
+                                                                    <dt>'hide', 'lock', 'trace'</dt>
+                                                                    <dd>Evading detection, staying out of sight while being pursued</dd>
+                                                                    <dt>'New York', 'nice dress', 'style'</dt>
+                                                                    <dd>Fashion, aesthetic quality</dd>
+                                                                    <dt>'grab', 'palm'</dt>
+                                                                    <dd>Holding hands, exploration</dd>
+                                                                    <dt>'heaven', 'incredible', 'wildest dreams'</dt>
+                                                                    <dd>Untouchable fantasies</dd>
+                                                                </d1>
+                                                            <li>reputation</li>
+                                                                <d1>
+                                                                    <dt>'bad feeling', 'blame', 'mistakes'</dt>
+                                                                    <dd>Ominous anticipation, negative consequences</dd>
+                                                                    <dt>'actress starring', 'drama', 'reputation'</dt>
+                                                                    <dd>The dark façade of fame</dd>
+                                                                    <dt>'bar', 'drinking', 'drug'</dt>
+                                                                    <dd>Letting go of inhibitions</dd>
+                                                                    <dt>'bought', 'gorgeous', 'nice things'</dt>
+                                                                    <dd>Money and superficial materialism</dd>
+                                                                    <dt>'chill', 'patience', 'silence'</dt>
+                                                                    <dd>Calm and quiet</dd>
+                                                                    <dt>'end game', 'precede': </dt>
+                                                                    <dd>Beginning/end, before/after</dd>
+                                                                    <dt>'everyone', 'them'</dt>
+                                                                    <dd>Other people, herd mentality</dd>
+                                                                    <dt>'death trap', 'getaway car', 'tied'</dt>
+                                                                    <dd>Escaping from captivity</dd>
+                                                                    <dt>'check', 'trust/truth'</dt>
+                                                                    <dd>Trust and mistrust</dd>
+                                                                    <dt>'king/kingdom', 'Lord'</dt>
+                                                                    <dd>A higher ruling power</dd>
+                                                                </d1>
+                                                            <li>Lover</li>
+                                                                <d1>
+                                                                    <dt>'bless', 'blind faith', 'false God', 'worship'</dt>
+                                                                    <dd>Surrendering to belief in something greater</dd>
+                                                                    <dt>'combat', 'loud'</dt>
+                                                                    <dd>Noisy conflict</dd>
+                                                                    <dt>'calm', 'daylight', 'skipping down'</dt>
+                                                                    <dd>Feeling content, positive and giddy</dd>
+                                                                    <dt>'16th Avenue', 'Cornelia Street', 'London'</dt>
+                                                                    <dd>The impact of places on experiences</dd>
+                                                                </d1>
+                                                            <li>folklore</li>
+                                                                <d1>
+                                                                    <dt>'angry', 'cursing', 'fuck'</dt>
+                                                                    <dd>Expressing aggravation</dd>
+                                                                    <dt>'broken', 'canceled', 'exile', 'none', 'ruining everything', 'slipped away'</dt>
+                                                                    <dd>Losing it all, self-sabotage</dd>
+                                                                    <dt>'highest heels', 'old cardigan'</dt>
+                                                                    <dd>The imagery of clothing</dd>
+                                                                    <dt>'marvelous time', 'mirrorball', 'party', 'spinning'</dt>
+                                                                    <dd>Dancing at a soiree</dd>
+                                                                    <dt>'assume', 'seem'</dt>
+                                                                    <dd>Unfounded judgments</dd>
+                                                                    <dt>'August', 'garden', 'pool'</dt>
+                                                                    <dd>Backyard in late summertime</dd>
+                                                                </d1>
+                                                            <li>evermore</li>
+                                                                <d1>
+                                                                    <dt>'celebrated', 'champagne', 'glass'</dt>
+                                                                    <dd>Drinking to commemorate</dd>
+                                                                    <dt>'alive', 'bent', 'bone', 'ivy', 'roots', 'tree', 'wherever', 'willow'</dt>
+                                                                    <dd>Organically growing and entwining</dd>
+                                                                    <dt>'ship', 'tires', 'train'</dt>
+                                                                    <dd>Transportation</dd>
+                                                                    <dt>'cost', 'pay'</dt>
+                                                                    <dd>Compensation</dd>
+                                                                    <dt>'flush', 'water'</dt>
+                                                                    <dd>Rinsing and cleansing</dd>
+                                                                    <dt>'hollow', 'less', 'stray', 'wreck'</dt>
+                                                                    <dd>Being left with nothing</dd>
+                                                                    <dt>'across', 'leads', 'open'</dt>
+                                                                    <dd>Access to new opportunities</dd>
+                                                                    <dt>'motion', 'pause'</dt>
+                                                                    <dd>Stop and go</dd>
+                                                                    <dt>'prove', 'sure'</dt>
+                                                                    <dd>Establishing certainty</dd>
+                                                                    <dt>'gold rush', 'stone'</dt>
+                                                                    <dd>Earth’s treasures</dd>
+                                                                    <dt>'somehow', 'tolerate'</dt>
+                                                                    <dd>Reluctant endurance</dd>
+                                                                </d1>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseThreeC">Common Lyrics</a>
+                                                    </div>
+                                                    <div class="card-body accordion-collapse collapse" data-bs-parent="#child1" id="collapseThreeC">
+                                                        <ul>
+                                                            <li>'around'</li>
+                                                            <li>'baby'</li>
+                                                            <li>'back'</li>
+                                                            <li>'cause'</li>
+                                                            <li>'come'</li>
+                                                            <li>'didn't'/'don't'</li>
+                                                            <li>'go'/'gonna'</li>
+                                                            <li>'good'</li>
+                                                            <li>'got'</li>
+                                                            <li>'know'</li>
+                                                            <li>'look'</li>
+                                                            <li>'love'</li>
+                                                            <li>'made'/'make'</li>
+                                                            <li>'never'</li>
+                                                            <li>'night'</li>
+                                                            <li>'now'</li>
+                                                            <li>'one'</li>
+                                                            <li>'said'/'say'</li>
+                                                            <li>'see'/'seen'</li>
+                                                            <li>'still'</li>
+                                                            <li>'take'</li>
+                                                            <li>'thing'</li>
+                                                            <li>'think'</li>
+                                                            <li>'time'</li>
+                                                            <li>'wanna'/'want'</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseThreeD">Thematic Analysis</a>
+                                                    </div>
+                                                    <div class="card-body accordion-collapse collapse" data-bs-parent="#child1" id="collapseThreeD">
+                                                        <ul>
+                                                            <li>Reoccuring Themes</li>
+                                                                <d1>
+                                                                    <dt>Brokenness</dt>
+                                                                    <dt>Chaos and instability</dt>
+                                                                    <dt>God</dt>
+                                                                    <dt>Music and dancing</dt>
+                                                                    <dt>Nature</dt>
+                                                                    <dt>Romance</dt>
+                                                                    <dt>Struggle and overcoming</dt>
+                                                                </d1>
+                                                            <li>Recent Themes</li>
+                                                                <d1>
+                                                                    <dt>21+</dt>
+                                                                    <dt>Fame</dt>
+                                                                    <dt>Fashion</dt>
+                                                                    <dt>Memories</dt>
+                                                                    <dt>Money</dt>
+                                                                    <dt>Trust</dt>
+                                                                </d1>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        
                                     </div>
-
-                                    <div class="accordion-item mb-3">
-                                        <h2 class="accordion-header">
-                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">Sentiment Analysis</button></h2>
-                                        <div class="accordion-collapse collapse" id="collapseFour" data-bs-parent="#accordionSection">
-                                            <div class="accordion-body">
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h5 class="mb-0 d-inline">
+                                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Sentiment Analysis</button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                                            <div class="card-body" id="child1">
                                                 <p class="fs-5 mb-4">I analyzed the sentiment or mood of each song and album using VADER (Valence Aware Dictionary and sEntiment Reasoner), a natural language sentiment analysis tool. VADER labels the sentiments of words as either negative, neutral, or positive, and calculates the proportion of the text that is negative vs neutral vs positive. VADER also calculates a compound score of the sentiment of the text on a scale of -1.0 (most negative) to 1.0 (most positive). I determined the negative, neutral, positive, and compound scores for each song and album.</p>
-                                                <h4 class="fw-bolder mb-4 mt-5">Songs</h4>
-                                                <figure>
-                                                    <img src="assets/dataframes/indexed_df.png" alt="Dataframe for Songs" style="width:800px;height:700px;">
-                                                </figure>
-                                                <iframe width="500" height="250" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=4ABE5A402EE16F99%21129&authkey=%21AFvgw-eLel4TwQ4&em=2&wdAllowInteractivity=False&Item='new_indexed_df'!K1%3AN9&wdHideGridlines=True&wdInConfigurator=True"></iframe>
-                                                <!-- <p class="fs-5 mb-4">Observations</p> -->
-                                                <h4 class="fw-bolder mb-4 mt-5">Albums</h4>
-                                                <figure>
-                                                    <img src="assets/dataframes/means_df.png" alt="Dataframe for Albums" style="width:800px;height:700px;">
-                                                </figure>
-                                                <ul>
-                                                    <li>Compound Score</li>
-                                                        <d1>
-                                                            <dt>Lowest: evermore</dt>
-                                                            <dd>This is what I expected.</dd>
-                                                            <dt>Highest: reputation</dt>
-                                                            <dd>This is not what I expected.</dd>
-                                                        </d1>
-                                                    <li>Negative Score</li>
-                                                        <d1>
-                                                            <dt>Lowest: Fearless</dt>
-                                                            <dd>This is what I expected.</dd>
-                                                            <dt>Highest: evermore</dt>
-                                                            <dd>This is what I expected.</dd>
-                                                        </d1>
-                                                    <li>Neutral Score</li>
-                                                        <d1>
-                                                            <dt>Lowest: Lover</dt>
-                                                            <dd>This is what I expected.</dd>
-                                                            <dt>Highest: Fearless</dt>
-                                                            <dd>This is not what I expected.</dd>
-                                                        </d1>
-                                                    <li>Positive Score</li>
-                                                        <d1>
-                                                            <dt>Lowest: folklore</dt>
-                                                            <dd>This is what I expected.</dd>
-                                                            <dt>Highest: Lover</dt>
-                                                            <dd>This is what I expected.</dd>
-                                                        </d1>
-                                                </ul>
-                                                <figure>
-                                                    <img src="assets/plots/album_sentiments.png" alt="Plot for Albums" style="width:800px;height:700px;">
-                                                </figure>
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseFourA">Songs</a>
+                                                    </div>
+                                                    <div class="card-body accordion-collapse collapse" data-bs-parent="#child1" id="collapseFourA">
+                                                        <figure>
+                                                            <img src="assets/dataframes/indexed_df.png" alt="Dataframe for Songs" style="width:800px;height:700px;">
+                                                        </figure>
+                                                        <iframe width="500" height="250" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=4ABE5A402EE16F99%21129&authkey=%21AFvgw-eLel4TwQ4&em=2&wdAllowInteractivity=False&Item='new_indexed_df'!K1%3AN9&wdHideGridlines=True&wdInConfigurator=True"></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseFourB">Albums</a>
+                                                    </div>
+                                                    <div class="card-body accordion-collapse collapse" data-bs-parent="#child1" id="collapseFourB">
+                                                        <figure>
+                                                            <img src="assets/dataframes/means_df.png" alt="Dataframe for Albums" style="width:800px;height:700px;">
+                                                        </figure>
+                                                        <ul>
+                                                            <li>Compound Score</li>
+                                                                <d1>
+                                                                    <dt>Lowest: evermore</dt>
+                                                                    <dd>This is what I expected.</dd>
+                                                                    <dt>Highest: reputation</dt>
+                                                                    <dd>This is not what I expected.</dd>
+                                                                </d1>
+                                                            <li>Negative Score</li>
+                                                                <d1>
+                                                                    <dt>Lowest: Fearless</dt>
+                                                                    <dd>This is what I expected.</dd>
+                                                                    <dt>Highest: evermore</dt>
+                                                                    <dd>This is what I expected.</dd>
+                                                                </d1>
+                                                            <li>Neutral Score</li>
+                                                                <d1>
+                                                                    <dt>Lowest: Lover</dt>
+                                                                    <dd>This is what I expected.</dd>
+                                                                    <dt>Highest: Fearless</dt>
+                                                                    <dd>This is not what I expected.</dd>
+                                                                </d1>
+                                                            <li>Positive Score</li>
+                                                                <d1>
+                                                                    <dt>Lowest: folklore</dt>
+                                                                    <dd>This is what I expected.</dd>
+                                                                    <dt>Highest: Lover</dt>
+                                                                    <dd>This is what I expected.</dd>
+                                                                </d1>
+                                                        </ul>
+                                                        <figure>
+                                                            <img src="assets/plots/album_sentiments.png" alt="Plot for Albums" style="width:800px;height:700px;">
+                                                        </figure>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        
                                     </div>
-
-                                    <!-- <div class="accordion-item mb-3">
-                                        <h2 class="accordion-header">
-                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">Next Steps</button></h2>
-                                        <div class="accordion-collapse collapse" id="collapseFive" data-bs-parent="#accordionSection">
-                                            <div class="accordion-body">dummy text</div>
-                                        </div>
-                                        
-                                    </div> -->
                                 </div>
-
                             </div>
 
                         </section>
