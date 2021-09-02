@@ -15,66 +15,73 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#!">Lindsay's Blogfolio</a>
+                <a class="navbar-brand" href="../index.html">Lindsay's Blogfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                    <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Blog Posts</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contact</a></li> -->
-                    </ul>
-                </div>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contact</a></li>
+                    </ul> -->
+                <!-- </div> -->
             </div>
         </nav>
         <!-- Page content-->
         <div class="container mt-5">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <!-- Post content-->
                     <article>
                         <!-- Post header-->
                         <header class="mb-4">
                             <!-- Post title-->
-                            <h1 class="fw-bolder mb-1">Blog Post 2</h1>
+                            <h1 class="fw-bolder mb-1">3 Data Analysis Beginner Mistakes I Have Made + Lessons Learned</h1>
                             <!-- Post meta content-->
-                            <div class="text-muted fst-italic mb-2">Posted on May 31, 2021 by Lindsay Tubbs</div>
+                            <div class="text-muted fst-italic mb-2">Posted on September 2, 2021 by Lindsay Tubbs</div>
                             <!-- Post categories-->
                             <!-- <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>
                             <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a> -->
                         </header>
                         <!-- Preview image figure-->
-                        <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                        <!-- <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure> -->
                         <!-- Post content-->
                         <section class="mb-5">
-                            <p class="fs-5 mb-4">First paragraph</p>
-                            <p class="fs-5 mb-4">Second paragraph</p>
-                            <p class="fs-5 mb-4">Third paragraph</p>
-                            <h2 class="fw-bolder mb-4 mt-5">Heading</h2>
-                            <p class="fs-5 mb-4">Fourth paragraph</p>
-                            <p class="fs-5 mb-4">Fifth paragraph</p>
+                            <h2 class="fw-bolder mb-4 mt-5">Mistake #1: Reinventing the wheel</h2>
+                            <p class="fs-5 mb-4">When I was working on my first project, I thought that I had to write every line of code from scratch. This is a reasonable assumption for a beginner, but it is mistaken. More likely than not, what you’re trying to do has already been done by someone, and they have shared their code on GitHub for others to use. Better yet, often people publish tutorials outlining their process from start to finish. These are extremely helpful and can be found with a well-worded Google search. My favorite resource for these tutorials is TowardsDataScience on Medium.com. <b>Lesson learned: Before writing code from scratch, Google to see if someone has already shared the best approach (and give proper credit!).</b></p>
+                            <h2 class="fw-bolder mb-4 mt-5">Mistake #2: Working in a code editor instead of Jupyter Notebook</h2>
+                            <p class="fs-5 mb-4">When first learning to code, it is common to work in a code editor such as Atom or Sublime. However, for those working with data, Jupyter Notebook is a widely-used alternative. According to jupyter.org, “Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.”</p>
+                            <p class="fs-5 mb-4">In simple terms, Jupyter Notebook is like a code editor with additional helpful functionalities. For example:</p>
+                                <ul> 
+                                    <li>Write and run pieces of code separately in cells, instead of as one big script</li>
+                                    <li>Revert to previous saves with version control</li>
+                                    <li>Add annotations and markups for readability</li>
+                                </ul>
+                            <p class="fs-5 mb-4">I wrote much of my first project in Atom before switching to Jupyter Notebook. Therefore, I had to move over all my code and re-run it in Jupyter Notebook. This was a tedious and time-consuming process, especially because of abundant bug fixes and getting blocked from an API. Which leads me to mistake #3. <b>Lesson learned: Work in Jupyter Notebook instead of a code editor.</b></p>
+                            <h2 class="fw-bolder mb-4 mt-5">Mistake #3: Getting blocked from an API</h2>
+                            <p class="fs-5 mb-4">API owners have to pay a small amount each time a user calls or receives data. For this reason and others, many APIs impose rate limits on the number of calls or amount of data a user can have in a period of time. Not all APIs have rate limits, but owners will not hesitate to block excessive users. I admittedly was one of those users while working on my first project and debugging my API call after moving it from Atom to Jupyter Notebook (see mistake #2). I got blocked, so I had to rewrite the code to call a different API. This was a frustrating and time-consuming mistake that could have been prevented. Now I know to write API calls as functions with a parameter specifying the amount of data to request. This makes it possible to test API calls with small data requests. <b>Lesson learned: Test API calls with small data requests by writing calls as functions with a parameter specifying the amount of data requested.</b></p>
                         </section>
                     </article>
                     <!-- Comments section-->
-                    <section class="mb-5">
-                        <div class="card bg-light">
-                            <div class="card-body">
+                    <!-- <section class="mb-5"> -->
+                        <!-- <div class="card bg-light"> -->
+                            <!-- <div class="card-body"> -->
                                 <!-- Comment form-->
-                                <form class="mb-4"><textarea class="form-control" rows="3" placeholder="Leave a comment!"></textarea></form>
+                                <!-- <form class="mb-4"><textarea class="form-control" rows="3" placeholder="Leave a comment!"></textarea></form> -->
                                 <!-- Comment with nested comments-->
                                 <!-- <div class="d-flex mb-4"> -->
                                     <!-- Parent comment-->
                                     <!-- <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
                                     <div class="ms-3">
                                         <div class="fw-bold">Commenter Name</div>
-                                        If you're going to lead a space frontier, it has to be government; it'll never be private enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified risks. -->
+                                        comment -->
                                         <!-- Child comment 1-->
                                         <!-- <div class="d-flex mt-4">
                                             <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
                                             <div class="ms-3">
                                                 <div class="fw-bold">Commenter Name</div>
-                                                And under those conditions, you cannot establish a capital-market evaluation of that enterprise. You can't get investors.
+                                                comment
                                             </div>
                                         </div> -->
                                         <!-- Child comment 2-->
@@ -82,7 +89,7 @@
                                             <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
                                             <div class="ms-3">
                                                 <div class="fw-bold">Commenter Name</div>
-                                                When you put money directly to a problem, it makes a good headline.
+                                                comment
                                             </div>
                                         </div>
                                     </div>
@@ -92,15 +99,15 @@
                                     <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
                                     <div class="ms-3">
                                         <div class="fw-bold">Commenter Name</div>
-                                        When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
+                                        comment
                                     </div>
                                 </div> -->
-                            </div>
-                        </div>
-                    </section>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    <!-- </section> -->
                 </div>
                 <!-- Side widgets-->
-                <div class="col-lg-4">
+                <!-- <div class="col-lg-4"> -->
                     <!-- Search widget-->
                     <!-- <div class="card mb-4">
                         <div class="card-header">Search</div>
@@ -134,11 +141,11 @@
                         </div>
                     </div> -->
                     <!-- Side widget-->
-                    <div class="card mb-4">
+                    <!-- <div class="card mb-4">
                         <div class="card-header">About Me</div>
                         <div class="card-body">Brief blurb</div>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
             </div>
         </div>
         <!-- Footer-->
