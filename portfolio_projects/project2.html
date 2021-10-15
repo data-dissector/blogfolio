@@ -73,7 +73,7 @@
                             <p class="fs-5 mb-4">Social media is an arbiter of public opinion, and I chose Twitter as a channel. With a focus on tweets containing the terms “impossible burger” or “beyond burger”, I obtained 40,000 recent tweets for each term.</p>
                             <p class="fs-5 mb-4"><b>Goals:
                                 <ol> 
-                                    <li>Analyze tweets for positive or negative sentiment using rule-based method</li>
+                                    <li>Analyze tweets for positive (0) or negative (1) sentiment using rule-based method</li>
                                     <li>Visualize positive and negative tweets in word clouds</li>
                                     <li>Use positive and negative tweets to train logistic regression machine learning model to predict sentiments of more tweets</li>
                                 </ol></b>
@@ -105,25 +105,27 @@
                                             </h5>
                                         </div>
                                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-                                            <div class="card-body text-center">
+                                            <div class="card-body">
+                                                <!-- text-center -->
+                                                <p class="fs-5 mb-4">After analyzing the tweets for positive or negative sentiment using a rule-based method, I visualized the positive and negative sets of tweets separately in word clouds to gain familiarity with each set. These positive and negative sets of tweets will be used to train a machine learning model to perform sentiment prediction.</p>
                                                 <h2>Impossible Burger</h2>
-                                                    <h5>Positive Compound Sentiment</h5>
+                                                    <h5>Positive Sentiment</h5>
                                                     <figure>
-                                                        <img src="assets/impossible_wc_positive.png" class="img-fluid img-thumbnail rounded" alt="Wordcloud for Impossible tweets with positive compound sentiment" style="height:600px;">
+                                                        <img src="assets/impossible_wc_positive.png" class="img-fluid img-thumbnail rounded mb-4" alt="Wordcloud for Impossible tweets with positive sentiment" style="height:600px;">
                                                         <!-- <figcaption>Positive Compound Sentiment</figcaption> -->
                                                     </figure>
-                                                    <h5>Negative Compound Sentiment</h5>
+                                                    <h5>Negative Sentiment</h5>
                                                     <figure>
-                                                        <img src="assets/impossible_wc_negative.png" class="img-fluid img-thumbnail rounded" alt="Wordcloud for Impossible tweets with negative compound sentiment" style="height:600px;">
+                                                        <img src="assets/impossible_wc_negative.png" class="img-fluid img-thumbnail rounded mb-4" alt="Wordcloud for Impossible tweets with negative sentiment" style="height:600px;">
                                                     </figure>
                                                 <h2>Beyond Burger</h2>
-                                                    <h5>Positive Compound Sentiment</h5>
+                                                    <h5>Positive Sentiment</h5>
                                                     <figure>
-                                                        <img src="assets/beyond_wc_positive.png" class="img-fluid img-thumbnail rounded" alt="Wordcloud for Beyond tweets with positive compound sentiment" style="height:600px;">
+                                                        <img src="assets/beyond_wc_positive.png" class="img-fluid img-thumbnail rounded mb-4" alt="Wordcloud for Beyond tweets with positive sentiment" style="height:600px;">
                                                     </figure>
-                                                    <h5>Negative Compound Sentiment</h5>
+                                                    <h5>Negative Sentiment</h5>
                                                     <figure>
-                                                        <img src="assets/beyond_wc_negative.png" class="img-fluid img-thumbnail rounded" alt="Wordcloud for Beyond tweets with negative compound sentiment" style="height:600px;">
+                                                        <img src="assets/beyond_wc_negative.png" class="img-fluid img-thumbnail rounded" alt="Wordcloud for Beyond tweets with negative sentiment" style="height:600px;">
                                                     </figure>
                                             </div>
                                         </div>
@@ -136,23 +138,24 @@
                                         </div>
                                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
                                             <div class="card-body">
+                                                <p class="fs-5 mb-4">I extracted the hashtags from the positive and negative sets of tweets and calculated the frequency of usage for each.</p>
                                                 <h2>Impossible Burger</h2>
-                                                    <h5>Positive Compound Sentiment</h5>
+                                                    <h5>Positive Sentiment</h5>
                                                     <figure>
-                                                        <img src="assets/impossible_df_positive.png" class="img-fluid img-thumbnail rounded" alt="Dataframe for Impossible hashtags with positive compound sentiment">
+                                                        <img src="assets/impossible_df_positive.png" class="img-fluid img-thumbnail rounded mb-4" alt="Dataframe for Impossible hashtags with positive sentiment">
                                                     </figure>
-                                                    <h5>Negative Compound Sentiment</h5>
+                                                    <h5>Negative Sentiment</h5>
                                                     <figure>
-                                                        <img src="assets/impossible_df_negative.png" class="img-fluid img-thumbnail rounded" alt="Dataframe for Impossible hashtags with negative compound sentiment">
+                                                        <img src="assets/impossible_df_negative.png" class="img-fluid img-thumbnail rounded mb-4" alt="Dataframe for Impossible hashtags with negative sentiment">
                                                     </figure>
                                                 <h2>Beyond Burger</h2>
-                                                    <h5>Positive Compound Sentiment</h5>
+                                                    <h5>Positive Sentiment</h5>
                                                     <figure>
-                                                        <img src="assets/beyond_df_positive.png" class="img-fluid img-thumbnail rounded" alt="Dataframe for Beyond hashtags with positive compound sentiment">
+                                                        <img src="assets/beyond_df_positive.png" class="img-fluid img-thumbnail rounded mb-4" alt="Dataframe for Beyond hashtags with positive sentiment">
                                                     </figure>
-                                                    <h5>Negative Compound Sentiment</h5>
+                                                    <h5>Negative Sentiment</h5>
                                                     <figure>
-                                                        <img src="assets/beyond_df_negative.png" class="img-fluid img-thumbnail rounded" alt="Dataframe for Beyond hashtags with negative compound sentiment">
+                                                        <img src="assets/beyond_df_negative.png" class="img-fluid img-thumbnail rounded" alt="Dataframe for Beyond hashtags with negative sentiment">
                                                     </figure>
                                             </div>
                                         </div>
@@ -165,27 +168,29 @@
                                         </div>
                                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
                                             <div class="card-body">
+                                                <p class="fs-5 mb-4">Feature extraction methods: Bag-of-Words and TF-IDF</p>
+                                                <p class="fs-5 mb-4">Machine learning models: Logistic Regression, XGBoost, Decision Trees</p>
                                                 <h2>Impossible Burger</h2>
                                                     <h5>Bag-of-Words Features</h5>
                                                     <figure>
-                                                        <img src="assets/impossible_df_bow.png" class="img-fluid img-thumbnail rounded" alt="Dataframe for Impossible Burger Bag-of-Words comparison among machine learning models">
+                                                        <img src="assets/impossible_df_bow.png" class="img-fluid img-thumbnail rounded mb-4" alt="Dataframe for Impossible Burger Bag-of-Words comparison among machine learning models">
                                                     </figure>
                                                     <h5>TF-IDF Features</h5>
                                                     <figure>
-                                                        <img src="assets/impossible_df_tfidf.png" class="img-fluid img-thumbnail rounded" alt="Dataframe for Impossible Burger TF-IDF comparison among machine learning models">
+                                                        <img src="assets/impossible_df_tfidf.png" class="img-fluid img-thumbnail rounded mb-4" alt="Dataframe for Impossible Burger TF-IDF comparison among machine learning models">
                                                     </figure>
                                                     <h5>Bag-of-Words vs TF-IDF</h5>
                                                     <figure>
-                                                        <img src="assets/impossible_df_logreg.png" class="img-fluid img-thumbnail rounded" alt="Dataframe for Impossible Burger comparison of Bag-of-Words and TF-IDF for logistic regression">
+                                                        <img src="assets/impossible_df_logreg.png" class="img-fluid img-thumbnail rounded mb-4" alt="Dataframe for Impossible Burger comparison of Bag-of-Words and TF-IDF for logistic regression">
                                                     </figure>
                                                 <h2>Beyond Burger</h2>
                                                     <h5>Bag-of-Words Features</h5>
                                                     <figure>
-                                                        <img src="assets/beyond_df_bow.png" class="img-fluid img-thumbnail rounded" alt="Dataframe for Beyond Burger Bag-of-Words comparison among machine learning models">
+                                                        <img src="assets/beyond_df_bow.png" class="img-fluid img-thumbnail rounded mb-4" alt="Dataframe for Beyond Burger Bag-of-Words comparison among machine learning models">
                                                     </figure>
                                                     <h5>TF-IDF Features</h5>
                                                     <figure>
-                                                        <img src="assets/beyond_df_tfidf.png" class="img-fluid img-thumbnail rounded" alt="Dataframe for Beyond Burger TF-IDF comparison among machine learning models">
+                                                        <img src="assets/beyond_df_tfidf.png" class="img-fluid img-thumbnail rounded mb-4" alt="Dataframe for Beyond Burger TF-IDF comparison among machine learning models">
                                                     </figure>
                                                     <h5>Bag-of-Words vs TF-IDF</h5>
                                                     <figure>
@@ -202,10 +207,11 @@
                                         </div>
                                         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
                                             <div class="card-body">
+                                                <p class="fs-5 mb-4">Sentiment predictions (0 for positive, 1 for negative) of tweets by logistic regression machine learning model. The Impossible Burger set used TF-IDF features, while the Beyond Burger set used Bag-of-Words features.</p>
                                                 <h2>Impossible Burger</h2>
                                                     <!-- <h5>Bag-of-Words Features</h5> -->
                                                     <figure>
-                                                        <img src="assets/impossible_df_results.png" class="img-fluid img-thumbnail rounded" alt="Dataframe for Impossible Burger Sentiment Predictions">
+                                                        <img src="assets/impossible_df_results.png" class="img-fluid img-thumbnail rounded mb-4" alt="Dataframe for Impossible Burger Sentiment Predictions">
                                                     </figure>
                                                 <h2>Beyond Burger</h2>
                                                     <!-- <h5>Bag-of-Words Features</h5> -->
