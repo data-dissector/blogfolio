@@ -171,9 +171,10 @@
                                         </div>
                                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
                                             <div class="card-body">
-                                                <p class="fs-5 mb-4">Feature extraction is the process of gathering words (as vectors of numbers) from text to use as input to train machine learning models. Bag-of-Words and TF-IDF are two methods of feature extraction.</p>
-                                                <p class="fs-5 mb-4">Bag-of-Words represents the occurrence of each word in the text. TF-IDF</p>
+                                                <p class="fs-5 mb-4">Feature extraction is the process of gathering words (as vectors of numbers) from text to use as input to train machine learning models. Bag-of-Words and TF-IDF (term frequency-inverse document frequency) are two methods of feature extraction.</p>
+                                                <p class="fs-5 mb-4">Bag-of-Words represents the occurrence of each word in a document (tweet). TF-IDF represents the importance of each word to a document within a group of documents (set of tweets).</p>
                                                 <p class="fs-5 mb-4">Machine learning models: Logistic Regression, XGBoost, Decision Trees</p>
+                                                <p class="fs-5 mb-4">F1 score is used to measure the effectiveness of each combination of machine learning model and feature extraction method. For Impossible Burger, the combination with the highest F1 score (.665513) is logistic regression using TF-IDF features. For Beyond Burger, the combination with the highest F1 score (.623679) is logistic regression using Bag-of-Words features.</p>
                                                 <h2>Impossible Burger</h2>
                                                     <h5>Bag-of-Words Features</h5>
                                                     <figure>
